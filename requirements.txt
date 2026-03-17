@@ -1,0 +1,15 @@
+# Python 3.10 required.
+# Why these versions?
+# - ultralytics==8.2.0: A stable version of YOLOv8 that doesn't include the bleeding-edge breaking changes.
+# - torch==2.3.1 & torchvision==0.18.1: Confirmed compatible versions with Python 3.10.
+# - opencv-python==4.9.0.80: A highly stable OpenCV version that avoids the recent 4.10 issues found with desktop GUI environments on Windows.
+# - numpy==1.26.4: Strictly pinned < 2.0 to avoid numpy 2.0 API breaking changes which frequently crash older compiled computer vision extensions.
+
+ultralytics==8.2.0
+torch==2.3.1
+torchvision==0.18.1
+opencv-python==4.9.0.80
+numpy==1.26.4
+
+pytest==8.1.1
+pytest-mock==3.14.0

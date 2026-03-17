@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# YOLO weights
+*.pt
+*.onnx
+
+# Data and Logs
+data/
+runs/
+alerts/
+.pytest_cache/
+
+# User-specific videos
+videos/*
+!videos/README.md (if any)
+
+# IDE configs
+.vscode/
+.idea/
+pyrightconfig.json
