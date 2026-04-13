@@ -1,77 +1,136 @@
-# AI Violence & Weapon Detection System
+# AI Violence & Weapon Detection Microservice
 
-This is a real-time AI detection module for detecting violence and weapons from video streams (webcam, video files, RTSP).
+![Status](https://img.shields.io/badge/Status-Production--Ready-brightgreen)
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Framework](https://img.shields.io/badge/Framework-FastAPI-009688)
+![AI](https://img.shields.io/badge/AI-YOLOv8-FF6F00)
 
-## Prerequisites
-- **Python:** Strictly `3.10.x`
-- **OS:** Windows / Linux / macOS
+A high-performance, containerized AI inference microservice designed for real-time violence and weapon detection. This project combines state-of-the-art YOLOv8 models with custom heuristic logic to provide deep situational awareness.
 
-## Setup & Installation
+---
 
-### 1. Create a Virtual Environment
-We strongly recommend creating a virtual environment to avoid dependency conflicts.
+## 🚀 Execution Modes
+
+The system supports two primary modes of operation, switchable via CLI arguments.
+
+### 1. API Mode (Production)
+Launches a FastAPI server that handles inference requests via HTTP.
 ```bash
-python -m venv venv
+python main.py --mode api --port 8000
 ```
 
-### 2. Activate the Environment
-- **Windows:**
-  ```bash
-  .\venv\Scripts\activate
-  ```
-- **macOS/Linux:**
-  ```bash
-  source venv/bin/activate
-  ```
-
-### 3. Install Dependencies
-There are two ways to install dependencies based on your hardware.
-
-#### Option A: CPU-Only Installation (Default/Safe)
-Run the following command to install exactly the versions specified in `requirements.txt`.
+### 2. Webcam Mode (Local Testing)
+Runs a real-time GUI feed using your local camera or a video file.
 ```bash
-pip install -r requirements.txt
+python main.py --mode webcam --video test.mp4
 ```
 
-#### Option B: GPU (CUDA) Installation
-For real-time fast performance with an NVIDIA GPU:
-1. First, install PyTorch with CUDA 11.8 or 12.1 support directly from the official PyTorch index (matching the pinned version):
+---
+
+## 🛠️ Installation
+
+1. **Setup Environment**:
    ```bash
-   pip install torch==2.3.1 torchvision==0.18.1 --index-url https://download.pytorch.org/whl/cu118
-   ```
-2. Then, install the rest of the libraries:
-   ```bash
-   pip install ultralytics==8.2.0 opencv-python==4.9.0.80 numpy==1.26.4
+   python -m venv venv
+   .\venv\Scripts\activate  # Windows
+   source venv/bin/activate # Linux/macOS
    ```
 
-### 4. Verify Installation
-You can verify the setup by running the Python interpreter:
+2. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+---
+
+## 📂 Example Workflow
+
+### Scenario: Processing an Image via API
+1. **Request**: A client system (e.g., CCTV backend) sends an image (File or Base64) to the microservice.
+2. **Inference**: The AI service runs both Detection and Classification models in parallel.
+3. **Logic**: The system calculates proximity between persons and weapons.
+4. **Response**: The service returns a unified JSON containing the status, confidence, and bounding boxes.
+
+**Sample Request (cURL):**
 ```bash
-python -c "import torch, cv2, ultralytics; print('Setup is Successful!')"
+curl -X POST "http://localhost:8000/predict" -F "file=@scene.jpg"
 ```
 
-## Running the Application
-The behavior of the application is controlled via the `MODE` constant in `config/settings.py`.
+---
 
-1. Open `config/settings.py` and set your desired mode:
-   - `MODE = "webcam"` (Primary - uses default system camera)
-   - `MODE = "video"` (Set `VIDEO_FILE_PATH = "test.mp4"`)
-   - `MODE = "rtsp"` (Set `RTSP_URL = "rtsp://..."`)
-2. Run the main processing script:
-   ```bash
-   python main.py
-   ```
-3. Press `q` to safely exit the display window at any time.
+## 📊 Data Flow
 
-## Troubleshooting Common Errors
+The following diagram illustrates how data moves through the system:
 
-- **Error: `ModuleNotFoundError: No module named 'cv2'`**
-  - Fix: Ensure you activated the virtual environment and successfully installed `opencv-python==4.9.0.80`.
-- **Error: Webcam does not open / Frame read failure**
-  - Fix: Check if another application (e.g. Teams, Zoom) is currently using your camera. Ensure Windows Privacy Settings allow Apps to access your camera.
-- **Error: `RuntimeError: Expected all tensors to be on the same device`**
-  - Fix: This often happens if the model is on GPU but the array is on CPU. Our YOLOv8 wrapper inherently manages this by forcing CPU operations when needed, but ensure your PyTorch and Torchvision installations are correctly matched.
-- **Error: Low FPS**
-  - Fix: Run using the GPU installation option described above, or ensure no other heavy background processes are running. The system inherently uses the lightweight `yolov8n.pt` to mitigate this.
-- **Error: Missing `yolov8n.pt` file**
-  - Fix: The ultralytics library will automatically download this file internally the first time you run `main.py`. Ensure you have an active internet connection.
+```mermaid
+graph TD
+    A[Input Image/Frame] --> B{Entry Point: main.py}
+    B -- mode:api --> C[FastAPI: api.py]
+    B -- mode:webcam --> D[OpenCV GUI Loop]
+    
+    C --> E[AIInferenceWrapper]
+    D --> E
+    
+    E --> F[YOLOv8 Detection: Persons/Weapons]
+    E --> G[YOLOv8 Classification: Violence Label]
+    E --> H[Heuristic Analyzers: Proximity/Movement]
+    
+    F --> I[Integrated JSON Response]
+    G --> I
+    H --> I
+    
+    I -- API Response --> J[Client Backend]
+    I -- GUI Overlay --> K[Local Monitor]
+```
+
+---
+
+## 🐳 Docker Deployment
+
+Deploy the microservice as a lightweight container in seconds.
+
+**1. Build the image:**
+```bash
+docker build -t violence-detection-api .
+```
+
+**2. Run the container:**
+```bash
+docker run -p 8000:8000 violence-detection-api
+```
+
+---
+
+## 📡 API Reference
+
+### POST `/predict`
+Accepts a multipart file or a JSON body with `image_base64`.
+
+**Success Response:**
+```json
+{
+  "prediction": "violence",
+  "confidence": 0.94,
+  "detections": {
+    "persons": [{"x1": 102, "y1": 50, "x2": 450, "y2": 600, "conf": 0.89}],
+    "weapons": [{"x1": 200, "y1": 300, "x2": 250, "y2": 350, "conf": 0.72}]
+  },
+  "heuristic_alerts": ["Weapon Detected near Person"],
+  "processing_time_ms": 124.5
+}
+```
+
+---
+
+## ⚙️ Configuration
+Modify `config/settings.py` to tune detection thresholds:
+- `CONFIDENCE_THRESHOLD`: Minimum confidence for AI detections.
+- `VIOLENCE_PROXIMITY_THRESHOLD`: Pixel distance to trigger alerts.
+
+---
+
+## 📜 Key Changes in this Version
+- **Refactored Architecture**: Decoupled AI logic into `model_wrapper.py`.
+- **FastAPI Migration**: Full production-ready web backend.
+- **Unified Logic**: Combined classification + detection + heuristics.
+- **Improved Logging**: Detailed prediction logs for auditability.
