@@ -27,15 +27,20 @@ class AIInferenceWrapper:
         
         print(f"[INFO] Models loaded on {self.device}")
 
-    def predict_frame(self, frame):
+    def predict_frame(self, frame, threshold=None):
         """
         Processes a single frame:
         1. Runs Detection (Persons, Weapons)
-        2. Runs Heuristic Logic (Proximity, Movement)
+        2. CASCADE: Only runs classification if people are present.
         3. Runs Classification (Violence/Non-Violence)
         """
-        # 1. Detection Inference
-        det_results = self.det_model(frame, device=self.device, verbose=False)[0]
+        conf_threshold = threshold if threshold is not None else CONFIDENCE_THRESHOLD
+        
+        # OPTIMIZATION: Use imgsz=320 for significant CPU speedup
+        inference_size = 320
+        
+        # 1. Detection Inference (Person/Weapon)
+        det_results = self.det_model(frame, device=self.device, verbose=False, imgsz=inference_size)[0]
         persons = []
         weapons = []
         
@@ -46,7 +51,7 @@ class AIInferenceWrapper:
 
             for i, class_id in enumerate(class_ids):
                 conf = float(confidences[i])
-                if conf < CONFIDENCE_THRESHOLD:
+                if conf < conf_threshold:
                     continue
                     
                 box = {
@@ -62,13 +67,24 @@ class AIInferenceWrapper:
                 elif class_id in WEAPON_CLASSES:
                     weapons.append(box)
 
-        # 2. Heuristic Logic
+        # 2. CASCADE LOGIC: If no persons detected, skip heavy classification
+        # We classify as 'non-violence' by default if no one is there.
+        if not persons and not weapons:
+            return {
+                "prediction": "non-violence",
+                "confidence": 0.0,
+                "detections": {"persons": [], "weapons": []},
+                "heuristic_alerts": [],
+                "cascade_skip": True
+            }
+
+        # 3. Heuristic Logic
         violence_alerts = self.violence_heuristic.analyze(persons)
         weapon_alerts = self.weapon_heuristic.analyze(persons, weapons)
         all_heuristic_alerts = list(set(violence_alerts + weapon_alerts))
 
-        # 3. Classification Inference
-        cls_results = self.cls_model(frame, device=self.device, verbose=False)[0]
+        # 4. Classification Inference (Only runs if person/weapon present)
+        cls_results = self.cls_model(frame, device=self.device, verbose=False, imgsz=inference_size)[0]
         prediction = "non-violence"
         confidence = 0.0
         
@@ -84,5 +100,12 @@ class AIInferenceWrapper:
                 "persons": persons,
                 "weapons": weapons
             },
-            "heuristic_alerts": all_heuristic_alerts
+            "heuristic_alerts": all_heuristic_alerts,
+            "cascade_skip": False
         }
+
+    def warmup(self):
+        """Pre-heats the models to avoid first-request lag."""
+        dummy_frame = np.zeros((640, 640, 3), dtype=np.uint8)
+        self.predict_frame(dummy_frame)
+        print(f"[INFO] Models warmed up.")
