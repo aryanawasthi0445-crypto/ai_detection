@@ -11,6 +11,7 @@ logger = setup_logging()
 # Initialize API and Model
 app = FastAPI(title="AI Violence Detection API", version="1.0.0")
 inference_service = AIInferenceWrapper()
+inference_service.warmup()
 
 class Base64Request(BaseModel):
     image_base64: str

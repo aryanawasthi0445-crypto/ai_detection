@@ -1,0 +1,2418 @@
+{
+  "nodes": [
+    {
+      "id": "ai_detection_api_py",
+      "label": "api.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "api_base64request",
+      "label": "Base64Request",
+      "file_type": "code",
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L16"
+    },
+    {
+      "id": "basemodel",
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "api_predict",
+      "label": "predict()",
+      "file_type": "code",
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L20"
+    },
+    {
+      "id": "api_health",
+      "label": "health()",
+      "file_type": "code",
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L68"
+    },
+    {
+      "id": "ai_detection_extract_frames_py",
+      "label": "extract_frames.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\extract_frames.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "extract_frames_extract_frames",
+      "label": "extract_frames()",
+      "file_type": "code",
+      "source_file": "ai_detection\\extract_frames.py",
+      "source_location": "L7"
+    },
+    {
+      "id": "extract_frames_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "ai_detection\\extract_frames.py",
+      "source_location": "L37"
+    },
+    {
+      "id": "extract_frames_rationale_8",
+      "label": "Extracts frames from a video file at a given interval.",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\extract_frames.py",
+      "source_location": "L8"
+    },
+    {
+      "id": "ai_detection_main_py",
+      "label": "main.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "main_run_webcam_mode",
+      "label": "run_webcam_mode()",
+      "file_type": "code",
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L14"
+    },
+    {
+      "id": "main_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L74"
+    },
+    {
+      "id": "ai_detection_model_wrapper_py",
+      "label": "model_wrapper.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "model_wrapper_aiinferencewrapper",
+      "label": "AIInferenceWrapper",
+      "file_type": "code",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L9"
+    },
+    {
+      "id": "model_wrapper_aiinferencewrapper_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L14"
+    },
+    {
+      "id": "model_wrapper_aiinferencewrapper_predict_frame",
+      "label": ".predict_frame()",
+      "file_type": "code",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L30"
+    },
+    {
+      "id": "model_wrapper_aiinferencewrapper_warmup",
+      "label": ".warmup()",
+      "file_type": "code",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L93"
+    },
+    {
+      "id": "model_wrapper_rationale_10",
+      "label": "Unified wrapper for both Detection and Classification models.     Integrates heu",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L10"
+    },
+    {
+      "id": "model_wrapper_rationale_31",
+      "label": "Processes a single frame:         1. Runs Detection (Persons, Weapons)         2",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L31"
+    },
+    {
+      "id": "model_wrapper_rationale_94",
+      "label": "Pre-heats the models to avoid first-request lag.",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L94"
+    },
+    {
+      "id": "ai_detection_split_dataset_py",
+      "label": "split_dataset.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\split_dataset.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "split_dataset_split_data",
+      "label": "split_data()",
+      "file_type": "code",
+      "source_file": "ai_detection\\split_dataset.py",
+      "source_location": "L6"
+    },
+    {
+      "id": "ai_detection_test_api_connection_py",
+      "label": "test_api_connection.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\test_api_connection.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "test_api_connection_test_health",
+      "label": "test_health()",
+      "file_type": "code",
+      "source_file": "ai_detection\\test_api_connection.py",
+      "source_location": "L5"
+    },
+    {
+      "id": "test_api_connection_test_predict_file",
+      "label": "test_predict_file()",
+      "file_type": "code",
+      "source_file": "ai_detection\\test_api_connection.py",
+      "source_location": "L11"
+    },
+    {
+      "id": "ai_detection_test_model_py",
+      "label": "test_model.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\test_model.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "test_model_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "ai_detection\\test_model.py",
+      "source_location": "L6"
+    },
+    {
+      "id": "ai_detection_train_py",
+      "label": "train.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\train.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "train_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "ai_detection\\train.py",
+      "source_location": "L7"
+    },
+    {
+      "id": "ai_detection_config_settings_py",
+      "label": "settings.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\config\\settings.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "ai_detection_config_init_py",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\config\\__init__.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "ai_detection_detector_violence_detector_py",
+      "label": "violence_detector.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "violence_detector_violencedetector",
+      "label": "ViolenceDetector",
+      "file_type": "code",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L4"
+    },
+    {
+      "id": "violence_detector_violencedetector_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L11"
+    },
+    {
+      "id": "violence_detector_calculate_center",
+      "label": "_calculate_center()",
+      "file_type": "code",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L16"
+    },
+    {
+      "id": "violence_detector_calculate_distance",
+      "label": "_calculate_distance()",
+      "file_type": "code",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L20"
+    },
+    {
+      "id": "violence_detector_violencedetector_analyze",
+      "label": ".analyze()",
+      "file_type": "code",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L23"
+    },
+    {
+      "id": "violence_detector_rationale_5",
+      "label": "Analyzes spatio-temporal dynamics of persons to determine violence.     Looks fo",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L5"
+    },
+    {
+      "id": "violence_detector_rationale_24",
+      "label": "Determines violence alerts based on multiple variables.",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L24"
+    },
+    {
+      "id": "ai_detection_detector_weapon_detector_py",
+      "label": "weapon_detector.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "weapon_detector_weapondetector",
+      "label": "WeaponDetector",
+      "file_type": "code",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L4"
+    },
+    {
+      "id": "weapon_detector_calculate_center",
+      "label": "_calculate_center()",
+      "file_type": "code",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L10"
+    },
+    {
+      "id": "weapon_detector_calculate_distance",
+      "label": "_calculate_distance()",
+      "file_type": "code",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L17"
+    },
+    {
+      "id": "weapon_detector_weapondetector_analyze",
+      "label": ".analyze()",
+      "file_type": "code",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L21"
+    },
+    {
+      "id": "weapon_detector_rationale_5",
+      "label": "Analyzes YOLO outputs specifically for weapons and their relation to humans.",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L5"
+    },
+    {
+      "id": "weapon_detector_rationale_11",
+      "label": "Calculate the center coordinate of a bounding box.",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L11"
+    },
+    {
+      "id": "weapon_detector_rationale_18",
+      "label": "Calculate Euclidean distance between two points.",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L18"
+    },
+    {
+      "id": "weapon_detector_rationale_22",
+      "label": "Checks if a detected weapon is near any detected person.         Returns a list",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L22"
+    },
+    {
+      "id": "ai_detection_detector_yolo_detector_py",
+      "label": "yolo_detector.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\detector\\yolo_detector.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "yolo_detector_yolodetector",
+      "label": "YOLODetector",
+      "file_type": "code",
+      "source_file": "ai_detection\\detector\\yolo_detector.py",
+      "source_location": "L5"
+    },
+    {
+      "id": "yolo_detector_yolodetector_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "ai_detection\\detector\\yolo_detector.py",
+      "source_location": "L10"
+    },
+    {
+      "id": "yolo_detector_yolodetector_process_frame",
+      "label": ".process_frame()",
+      "file_type": "code",
+      "source_file": "ai_detection\\detector\\yolo_detector.py",
+      "source_location": "L27"
+    },
+    {
+      "id": "yolo_detector_rationale_6",
+      "label": "Wrapper for Ultralytics YOLOv8. Handles model loading, device selection,     and",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\detector\\yolo_detector.py",
+      "source_location": "L6"
+    },
+    {
+      "id": "yolo_detector_rationale_28",
+      "label": "Runs inference on a single frame.         Filters and groups detections into Per",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\detector\\yolo_detector.py",
+      "source_location": "L28"
+    },
+    {
+      "id": "ai_detection_detector_init_py",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\detector\\__init__.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "ai_detection_tests_test_detectors_py",
+      "label": "test_detectors.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "test_detectors_test_violence_detector_low_proximity_fast_movement",
+      "label": "test_violence_detector_low_proximity_fast_movement()",
+      "file_type": "code",
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L5"
+    },
+    {
+      "id": "test_detectors_test_violence_detector_no_persons",
+      "label": "test_violence_detector_no_persons()",
+      "file_type": "code",
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L25"
+    },
+    {
+      "id": "test_detectors_test_weapon_detector_not_held",
+      "label": "test_weapon_detector_not_held()",
+      "file_type": "code",
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L30"
+    },
+    {
+      "id": "test_detectors_test_weapon_detector_held",
+      "label": "test_weapon_detector_held()",
+      "file_type": "code",
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L39"
+    },
+    {
+      "id": "ai_detection_tests_test_integration_py",
+      "label": "test_integration.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\tests\\test_integration.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "test_integration_test_json_output_generation",
+      "label": "test_json_output_generation()",
+      "file_type": "code",
+      "source_file": "ai_detection\\tests\\test_integration.py",
+      "source_location": "L4"
+    },
+    {
+      "id": "ai_detection_tests_init_py",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\tests\\__init__.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "ai_detection_utils_api_utils_py",
+      "label": "api_utils.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\utils\\api_utils.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "api_utils_setup_logging",
+      "label": "setup_logging()",
+      "file_type": "code",
+      "source_file": "ai_detection\\utils\\api_utils.py",
+      "source_location": "L7"
+    },
+    {
+      "id": "api_utils_decode_image_base64",
+      "label": "decode_image_base64()",
+      "file_type": "code",
+      "source_file": "ai_detection\\utils\\api_utils.py",
+      "source_location": "L20"
+    },
+    {
+      "id": "api_utils_decode_image_bytes",
+      "label": "decode_image_bytes()",
+      "file_type": "code",
+      "source_file": "ai_detection\\utils\\api_utils.py",
+      "source_location": "L36"
+    },
+    {
+      "id": "api_utils_rationale_8",
+      "label": "Configures standard logging for the application.",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\utils\\api_utils.py",
+      "source_location": "L8"
+    },
+    {
+      "id": "api_utils_rationale_21",
+      "label": "Decodes a base64 string into an OpenCV image (numpy array).",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\utils\\api_utils.py",
+      "source_location": "L21"
+    },
+    {
+      "id": "api_utils_rationale_37",
+      "label": "Decodes raw image bytes into an OpenCV image (numpy array).",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\utils\\api_utils.py",
+      "source_location": "L37"
+    },
+    {
+      "id": "ai_detection_utils_video_stream_py",
+      "label": "video_stream.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "video_stream_videostream",
+      "label": "VideoStream",
+      "file_type": "code",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L8"
+    },
+    {
+      "id": "video_stream_videostream_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L13"
+    },
+    {
+      "id": "video_stream_videostream_determine_source",
+      "label": "._determine_source()",
+      "file_type": "code",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L19"
+    },
+    {
+      "id": "video_stream_videostream_start",
+      "label": ".start()",
+      "file_type": "code",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L43"
+    },
+    {
+      "id": "video_stream_videostream_read",
+      "label": ".read()",
+      "file_type": "code",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L69"
+    },
+    {
+      "id": "video_stream_videostream_release",
+      "label": ".release()",
+      "file_type": "code",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L84"
+    },
+    {
+      "id": "video_stream_rationale_9",
+      "label": "Robust video capture handler to stream frames from Webcam, Video File, or RTSP.",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L9"
+    },
+    {
+      "id": "video_stream_rationale_20",
+      "label": "Returns the appropriate OpenCV source string/int based on mode.",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L20"
+    },
+    {
+      "id": "video_stream_rationale_44",
+      "label": "Initializes the OpenCV VideoCapture object.",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L44"
+    },
+    {
+      "id": "video_stream_rationale_70",
+      "label": "Reads a frame from the capture source. Handles stream closure.",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L70"
+    },
+    {
+      "id": "video_stream_rationale_85",
+      "label": "Releases the camera and destroys windows cleanly.",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L85"
+    },
+    {
+      "id": "ai_detection_utils_visualization_py",
+      "label": "visualization.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "visualization_visualizer",
+      "label": "Visualizer",
+      "file_type": "code",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L4"
+    },
+    {
+      "id": "visualization_draw_bbox",
+      "label": "draw_bbox()",
+      "file_type": "code",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L16"
+    },
+    {
+      "id": "visualization_display_fps",
+      "label": "display_fps()",
+      "file_type": "code",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L38"
+    },
+    {
+      "id": "visualization_display_alerts",
+      "label": "display_alerts()",
+      "file_type": "code",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L44"
+    },
+    {
+      "id": "visualization_generate_json_output",
+      "label": "generate_json_output()",
+      "file_type": "code",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L61"
+    },
+    {
+      "id": "visualization_rationale_5",
+      "label": "Utility class for drawing bounding boxes, text alerts, and outputting JSON logs.",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L5"
+    },
+    {
+      "id": "visualization_rationale_17",
+      "label": "Draws a standardized bounding box with label logic.",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L17"
+    },
+    {
+      "id": "visualization_rationale_39",
+      "label": "Overlays the FPS counter on the top left corner.",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L39"
+    },
+    {
+      "id": "visualization_rationale_45",
+      "label": "Draws high-visibility red alerts for violence or weapons.",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L45"
+    },
+    {
+      "id": "visualization_rationale_62",
+      "label": "Formats the current frame detections into the required JSON struct.",
+      "file_type": "rationale",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L62"
+    },
+    {
+      "id": "ai_detection_utils_init_py",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "ai_detection\\utils\\__init__.py",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "ai_detection_api_py",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_api_py",
+      "target": "pydantic",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_api_py",
+      "target": "time",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_api_py",
+      "target": "logging",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_api_py",
+      "target": "utils_api_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_api_py",
+      "target": "model_wrapper",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_api_py",
+      "target": "api_base64request",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "api_base64request",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_api_py",
+      "target": "api_predict",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_api_py",
+      "target": "api_health",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_extract_frames_py",
+      "target": "cv2",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\extract_frames.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_extract_frames_py",
+      "target": "os",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\extract_frames.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_extract_frames_py",
+      "target": "argparse",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\extract_frames.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_extract_frames_py",
+      "target": "random",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\extract_frames.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_extract_frames_py",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\extract_frames.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_extract_frames_py",
+      "target": "extract_frames_extract_frames",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\extract_frames.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_extract_frames_py",
+      "target": "extract_frames_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\extract_frames.py",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "extract_frames_main",
+      "target": "extract_frames_extract_frames",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\extract_frames.py",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "extract_frames_rationale_8",
+      "target": "extract_frames_extract_frames",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\extract_frames.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_main_py",
+      "target": "argparse",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_main_py",
+      "target": "uvicorn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_main_py",
+      "target": "cv2",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_main_py",
+      "target": "time",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_main_py",
+      "target": "os",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_main_py",
+      "target": "utils_video_stream",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_main_py",
+      "target": "utils_visualization",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_main_py",
+      "target": "detector_yolo_detector",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_main_py",
+      "target": "detector_violence_detector",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_main_py",
+      "target": "detector_weapon_detector",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_main_py",
+      "target": "config_settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_main_py",
+      "target": "main_run_webcam_mode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_main_py",
+      "target": "main_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "main_main",
+      "target": "main_run_webcam_mode",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L89",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_model_wrapper_py",
+      "target": "torch",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_model_wrapper_py",
+      "target": "cv2",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_model_wrapper_py",
+      "target": "numpy",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_model_wrapper_py",
+      "target": "ultralytics",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_model_wrapper_py",
+      "target": "detector_violence_detector",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_model_wrapper_py",
+      "target": "detector_weapon_detector",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_model_wrapper_py",
+      "target": "config_settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_model_wrapper_py",
+      "target": "model_wrapper_aiinferencewrapper",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "model_wrapper_aiinferencewrapper",
+      "target": "model_wrapper_aiinferencewrapper_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "model_wrapper_aiinferencewrapper",
+      "target": "model_wrapper_aiinferencewrapper_predict_frame",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "model_wrapper_aiinferencewrapper",
+      "target": "model_wrapper_aiinferencewrapper_warmup",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "model_wrapper_aiinferencewrapper_warmup",
+      "target": "model_wrapper_aiinferencewrapper_predict_frame",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L96",
+      "weight": 1.0
+    },
+    {
+      "source": "model_wrapper_rationale_10",
+      "target": "model_wrapper_aiinferencewrapper",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "model_wrapper_rationale_31",
+      "target": "model_wrapper_aiinferencewrapper_predict_frame",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "model_wrapper_rationale_94",
+      "target": "model_wrapper_aiinferencewrapper_warmup",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_split_dataset_py",
+      "target": "os",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\split_dataset.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_split_dataset_py",
+      "target": "shutil",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\split_dataset.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_split_dataset_py",
+      "target": "random",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\split_dataset.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_split_dataset_py",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\split_dataset.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_split_dataset_py",
+      "target": "split_dataset_split_data",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\split_dataset.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_test_api_connection_py",
+      "target": "requests",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\test_api_connection.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_test_api_connection_py",
+      "target": "os",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\test_api_connection.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_test_api_connection_py",
+      "target": "base64",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\test_api_connection.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_test_api_connection_py",
+      "target": "test_api_connection_test_health",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\test_api_connection.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_test_api_connection_py",
+      "target": "test_api_connection_test_predict_file",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\test_api_connection.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_test_model_py",
+      "target": "cv2",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\test_model.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_test_model_py",
+      "target": "argparse",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\test_model.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_test_model_py",
+      "target": "ultralytics",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\test_model.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_test_model_py",
+      "target": "time",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\test_model.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_test_model_py",
+      "target": "test_model_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\test_model.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_train_py",
+      "target": "argparse",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\train.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_train_py",
+      "target": "ultralytics",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\train.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_train_py",
+      "target": "os",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\train.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_train_py",
+      "target": "torch",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\train.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_train_py",
+      "target": "train_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\train.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_config_settings_py",
+      "target": "os",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\config\\settings.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_detector_violence_detector_py",
+      "target": "math",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_detector_violence_detector_py",
+      "target": "config_settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_detector_violence_detector_py",
+      "target": "violence_detector_violencedetector",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "violence_detector_violencedetector",
+      "target": "violence_detector_violencedetector_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_detector_violence_detector_py",
+      "target": "violence_detector_calculate_center",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_detector_violence_detector_py",
+      "target": "violence_detector_calculate_distance",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "violence_detector_violencedetector",
+      "target": "violence_detector_violencedetector_analyze",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "violence_detector_violencedetector_analyze",
+      "target": "violence_detector_calculate_center",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "violence_detector_violencedetector_analyze",
+      "target": "violence_detector_calculate_distance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "violence_detector_rationale_5",
+      "target": "violence_detector_violencedetector",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "violence_detector_rationale_24",
+      "target": "violence_detector_violencedetector_analyze",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\violence_detector.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_detector_weapon_detector_py",
+      "target": "math",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_detector_weapon_detector_py",
+      "target": "config_settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_detector_weapon_detector_py",
+      "target": "weapon_detector_weapondetector",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_detector_weapon_detector_py",
+      "target": "weapon_detector_calculate_center",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_detector_weapon_detector_py",
+      "target": "weapon_detector_calculate_distance",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "weapon_detector_weapondetector",
+      "target": "weapon_detector_weapondetector_analyze",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "weapon_detector_weapondetector_analyze",
+      "target": "weapon_detector_calculate_center",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "weapon_detector_weapondetector_analyze",
+      "target": "weapon_detector_calculate_distance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "weapon_detector_rationale_5",
+      "target": "weapon_detector_weapondetector",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "weapon_detector_rationale_11",
+      "target": "weapon_detector_weapondetector_calculate_center",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "weapon_detector_rationale_18",
+      "target": "weapon_detector_weapondetector_calculate_distance",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "weapon_detector_rationale_22",
+      "target": "weapon_detector_weapondetector_analyze",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\weapon_detector.py",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_detector_yolo_detector_py",
+      "target": "torch",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\yolo_detector.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_detector_yolo_detector_py",
+      "target": "ultralytics",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\yolo_detector.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_detector_yolo_detector_py",
+      "target": "config_settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\yolo_detector.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_detector_yolo_detector_py",
+      "target": "yolo_detector_yolodetector",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\yolo_detector.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "yolo_detector_yolodetector",
+      "target": "yolo_detector_yolodetector_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\yolo_detector.py",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "yolo_detector_yolodetector",
+      "target": "yolo_detector_yolodetector_process_frame",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\yolo_detector.py",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "yolo_detector_rationale_6",
+      "target": "yolo_detector_yolodetector",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\yolo_detector.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "yolo_detector_rationale_28",
+      "target": "yolo_detector_yolodetector_process_frame",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\detector\\yolo_detector.py",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_tests_test_detectors_py",
+      "target": "pytest",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_tests_test_detectors_py",
+      "target": "detector_violence_detector",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_tests_test_detectors_py",
+      "target": "detector_weapon_detector",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_tests_test_detectors_py",
+      "target": "test_detectors_test_violence_detector_low_proximity_fast_movement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_tests_test_detectors_py",
+      "target": "test_detectors_test_violence_detector_no_persons",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_tests_test_detectors_py",
+      "target": "test_detectors_test_weapon_detector_not_held",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_tests_test_detectors_py",
+      "target": "test_detectors_test_weapon_detector_held",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_tests_test_integration_py",
+      "target": "utils_visualization",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\tests\\test_integration.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_tests_test_integration_py",
+      "target": "json",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\tests\\test_integration.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_tests_test_integration_py",
+      "target": "test_integration_test_json_output_generation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\tests\\test_integration.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_api_utils_py",
+      "target": "cv2",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\api_utils.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_api_utils_py",
+      "target": "numpy",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\api_utils.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_api_utils_py",
+      "target": "base64",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\api_utils.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_api_utils_py",
+      "target": "logging",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\api_utils.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_api_utils_py",
+      "target": "sys",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\api_utils.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_api_utils_py",
+      "target": "api_utils_setup_logging",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\api_utils.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_api_utils_py",
+      "target": "api_utils_decode_image_base64",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\api_utils.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_api_utils_py",
+      "target": "api_utils_decode_image_bytes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\api_utils.py",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "api_utils_rationale_8",
+      "target": "api_utils_setup_logging",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\api_utils.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "api_utils_rationale_21",
+      "target": "api_utils_decode_image_base64",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\api_utils.py",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "api_utils_rationale_37",
+      "target": "api_utils_decode_image_bytes",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\api_utils.py",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_video_stream_py",
+      "target": "cv2",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_video_stream_py",
+      "target": "sys",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_video_stream_py",
+      "target": "os",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_video_stream_py",
+      "target": "config_settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_video_stream_py",
+      "target": "video_stream_videostream",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "video_stream_videostream",
+      "target": "video_stream_videostream_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "video_stream_videostream",
+      "target": "video_stream_videostream_determine_source",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "video_stream_videostream",
+      "target": "video_stream_videostream_start",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "video_stream_videostream",
+      "target": "video_stream_videostream_read",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "video_stream_videostream",
+      "target": "video_stream_videostream_release",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "video_stream_videostream_init",
+      "target": "video_stream_videostream_determine_source",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "video_stream_rationale_9",
+      "target": "video_stream_videostream",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "video_stream_rationale_20",
+      "target": "video_stream_videostream_determine_source",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "video_stream_rationale_44",
+      "target": "video_stream_videostream_start",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "video_stream_rationale_70",
+      "target": "video_stream_videostream_read",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "video_stream_rationale_85",
+      "target": "video_stream_videostream_release",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\video_stream.py",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_visualization_py",
+      "target": "cv2",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_visualization_py",
+      "target": "json",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_visualization_py",
+      "target": "visualization_visualizer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_visualization_py",
+      "target": "visualization_draw_bbox",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_visualization_py",
+      "target": "visualization_display_fps",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_visualization_py",
+      "target": "visualization_display_alerts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_detection_utils_visualization_py",
+      "target": "visualization_generate_json_output",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "visualization_rationale_5",
+      "target": "visualization_visualizer",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "visualization_rationale_17",
+      "target": "visualization_visualizer_draw_bbox",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "visualization_rationale_39",
+      "target": "visualization_visualizer_display_fps",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "visualization_rationale_45",
+      "target": "visualization_visualizer_display_alerts",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "visualization_rationale_62",
+      "target": "visualization_visualizer_generate_json_output",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_detection\\utils\\visualization.py",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "api_base64request",
+      "target": "model_wrapper_aiinferencewrapper",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L6",
+      "weight": 0.8
+    },
+    {
+      "source": "model_wrapper_aiinferencewrapper",
+      "target": "violence_detector_violencedetector",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L5",
+      "weight": 0.8
+    },
+    {
+      "source": "model_wrapper_rationale_10",
+      "target": "violence_detector_violencedetector",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L5",
+      "weight": 0.8
+    },
+    {
+      "source": "model_wrapper_rationale_31",
+      "target": "violence_detector_violencedetector",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L5",
+      "weight": 0.8
+    },
+    {
+      "source": "model_wrapper_rationale_94",
+      "target": "violence_detector_violencedetector",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L5",
+      "weight": 0.8
+    },
+    {
+      "source": "model_wrapper_aiinferencewrapper",
+      "target": "weapon_detector_weapondetector",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L6",
+      "weight": 0.8
+    },
+    {
+      "source": "model_wrapper_rationale_10",
+      "target": "weapon_detector_weapondetector",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L6",
+      "weight": 0.8
+    },
+    {
+      "source": "model_wrapper_rationale_31",
+      "target": "weapon_detector_weapondetector",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L6",
+      "weight": 0.8
+    },
+    {
+      "source": "model_wrapper_rationale_94",
+      "target": "weapon_detector_weapondetector",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L6",
+      "weight": 0.8
+    },
+    {
+      "source": "api_predict",
+      "target": "api_utils_decode_image_base64",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "api_predict",
+      "target": "video_stream_videostream_read",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "api_predict",
+      "target": "api_utils_decode_image_bytes",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "api_predict",
+      "target": "model_wrapper_aiinferencewrapper_predict_frame",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\api.py",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "extract_frames_extract_frames",
+      "target": "video_stream_videostream_read",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\extract_frames.py",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "extract_frames_extract_frames",
+      "target": "video_stream_videostream_release",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\extract_frames.py",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "main_run_webcam_mode",
+      "target": "video_stream_videostream_start",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "main_run_webcam_mode",
+      "target": "video_stream_videostream",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "main_run_webcam_mode",
+      "target": "yolo_detector_yolodetector",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "main_run_webcam_mode",
+      "target": "violence_detector_violencedetector",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "main_run_webcam_mode",
+      "target": "weapon_detector_weapondetector",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "main_run_webcam_mode",
+      "target": "video_stream_videostream_read",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "main_run_webcam_mode",
+      "target": "yolo_detector_yolodetector_process_frame",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "main_run_webcam_mode",
+      "target": "weapon_detector_weapondetector_analyze",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "main_run_webcam_mode",
+      "target": "visualization_generate_json_output",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "main_run_webcam_mode",
+      "target": "visualization_draw_bbox",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "main_run_webcam_mode",
+      "target": "visualization_display_alerts",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "main_run_webcam_mode",
+      "target": "visualization_display_fps",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "main_run_webcam_mode",
+      "target": "video_stream_videostream_release",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\main.py",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "model_wrapper_aiinferencewrapper_init",
+      "target": "violence_detector_violencedetector",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "model_wrapper_aiinferencewrapper_init",
+      "target": "weapon_detector_weapondetector",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "model_wrapper_aiinferencewrapper_predict_frame",
+      "target": "weapon_detector_weapondetector_analyze",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\model_wrapper.py",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "test_model_main",
+      "target": "video_stream_videostream_read",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\test_model.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "test_model_main",
+      "target": "video_stream_videostream_release",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\test_model.py",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "test_detectors_test_violence_detector_low_proximity_fast_movement",
+      "target": "violence_detector_violencedetector",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "test_detectors_test_violence_detector_low_proximity_fast_movement",
+      "target": "weapon_detector_weapondetector_analyze",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "test_detectors_test_violence_detector_no_persons",
+      "target": "violence_detector_violencedetector",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "test_detectors_test_violence_detector_no_persons",
+      "target": "weapon_detector_weapondetector_analyze",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "test_detectors_test_weapon_detector_not_held",
+      "target": "weapon_detector_weapondetector",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "test_detectors_test_weapon_detector_not_held",
+      "target": "weapon_detector_weapondetector_analyze",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "test_detectors_test_weapon_detector_held",
+      "target": "weapon_detector_weapondetector",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "test_detectors_test_weapon_detector_held",
+      "target": "weapon_detector_weapondetector_analyze",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\tests\\test_detectors.py",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "test_integration_test_json_output_generation",
+      "target": "visualization_generate_json_output",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ai_detection\\tests\\test_integration.py",
+      "source_location": "L9",
+      "weight": 1.0
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

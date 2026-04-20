@@ -34,8 +34,11 @@ class AIInferenceWrapper:
         2. Runs Heuristic Logic (Proximity, Movement)
         3. Runs Classification (Violence/Non-Violence)
         """
+        # OPTIMIZATION: Use imgsz=320 for significant CPU speedup
+        inference_size = 320
+        
         # 1. Detection Inference
-        det_results = self.det_model(frame, device=self.device, verbose=False)[0]
+        det_results = self.det_model(frame, device=self.device, verbose=False, imgsz=inference_size)[0]
         persons = []
         weapons = []
         
@@ -68,7 +71,7 @@ class AIInferenceWrapper:
         all_heuristic_alerts = list(set(violence_alerts + weapon_alerts))
 
         # 3. Classification Inference
-        cls_results = self.cls_model(frame, device=self.device, verbose=False)[0]
+        cls_results = self.cls_model(frame, device=self.device, verbose=False, imgsz=inference_size)[0]
         prediction = "non-violence"
         confidence = 0.0
         
@@ -86,3 +89,9 @@ class AIInferenceWrapper:
             },
             "heuristic_alerts": all_heuristic_alerts
         }
+
+    def warmup(self):
+        """Pre-heats the models to avoid first-request lag."""
+        dummy_frame = np.zeros((640, 640, 3), dtype=np.uint8)
+        self.predict_frame(dummy_frame)
+        print(f"[INFO] Models warmed up.")
