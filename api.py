@@ -19,7 +19,8 @@ class Base64Request(BaseModel):
 @app.post("/predict")
 async def predict(
     file: UploadFile = File(None),
-    request: Request = None
+    request: Request = None,
+    confidence: Optional[float] = None
 ):
     start_time = time.time()
     
@@ -47,7 +48,7 @@ async def predict(
             raise HTTPException(status_code=400, detail="Could not decode image")
 
         # 2. Inference
-        result = inference_service.predict_frame(frame)
+        result = inference_service.predict_frame(frame, threshold=confidence)
         
         # 3. Finalize Response
         process_time = (time.time() - start_time) * 1000
